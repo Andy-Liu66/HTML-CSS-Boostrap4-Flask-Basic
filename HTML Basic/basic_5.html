@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="get">
+        <h3>Have you eaten yet?</h3>
+        <label for="yes">Yes:</label>
+        <input id="yes" type="radio" name="eaten_or_not" value="yes">
+        <label for="no">No:</label>
+        <input id="no" type="radio" name="eaten_or_not" value="no">
+        <!--if radio buttons share the same name, then only one of them can be selected(only one button can be clicked)
+            it means it becomes single choice, if the name isn't the same it becomes multiple choices-->
+        
+
+        <br>
+        <br>
+        <br>
+
+        <!--dropdown menu-->
+        <h3>How clean is your room?</h3>
+        <select name="stars">
+            <option value="Great">3</option>
+            <option value="Good">2</option>
+            <option value="Bad">1</option>
+        </select>
+
+
+        <br>
+        <br>
+        <br>
+
+
+        <!--text area-->
+        <h3>Any other comments?</h3>
+        <textarea name="feedback" id="" cols="30" rows="10"></textarea>
+        <!--most browser allow user to resize the text area-->
+        <input type="submit" name="" value="Submit FeedBack">
+        <!--after submitting the content in textarea, submitted content will be paired to the name in textarea,
+            the name in submit button should be empty(because its job is only to submit content), 
+            if submit button's name isn't empty, then the name will be paired with value contain in submit button, 
+            in this case which is "Submit FeedBack", and thus contain a useless information
+        -->
+
+        <!--after submitting it will end up refreshing the html page contain the name value pairs in it's URL, like:
+            "~/basic_5.html?eaten_or_not=yes&stars=Great&feedback=testing+comments"
+        -->
+    </form>
+</body>
+
+</html>
