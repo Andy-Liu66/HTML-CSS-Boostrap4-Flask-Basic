@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        There are two main methods of submitting the form information:
+        <ul>
+            <li>GET</li>
+            <P>GET requests a reprsentation of the specified resource, it will send back the information to action URL.</P>
+            <li>POST</li>
+            <p>POST submits data to be processed(we will be using POST once we learn how to connect a database with FLASK to  the form).</p>
+        </ul>
+    </p>
+
+
+    <br>
+    <br>
+    <br>
+
+
+    <form action="http://www.google.com" method="get">
+        <label for="email_tag"><strong>Email:</strong></label>
+        <input id="email_tag" type="email" name="user_email" value="email here">
+        <!--"value" will be filled in the box as a default value-->
+        <br>
+        <label for="password_tag"><strong>Password:</strong></label>
+        <input id="password_tag" type="password" name="user_password" placeholder="password">
+        <!--"placeholder" will be filled in the box as a default value in feint way-->
+
+
+        <br>
+        <input type="Submit">
+    </form>
+
+
+    <br>
+    <br>
+    <br>
+
+
+    <form action="http://www.google.com" method="get">
+        <label for="email_tag"><strong>Email:</strong></label>
+        <input id="email_tag" type="email" name="user_email" placeholder="email here">
+        <br>
+        <label for="password_tag"><strong>Password:</strong></label>
+        <input id="password_tag" type="password" name="user_password" placeholder="password">
+        <br>
+        <input type="Submit">
+        <!--if I input Email:"andy@gmail.com", and Password:"12345",then hit Submit,
+            page will be direct to google with the url below:
+            "https://www.google.com/?user_email=andy%40gmail.com&user_password=12345"
+            the content I pass in was shown in the url, notice that: 
+            "user_email=andy%40gmail.com" came from "name"=input value("name"="user_email")
+            "user_password=12345" came from "name"=input value("name"="user_password")
+        -->
+    </form>
+</body>
+
+</html>
