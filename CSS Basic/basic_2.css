@@ -1,0 +1,40 @@
+/* background */
+/* background can be set as color 
+body{
+    background: grey
+} */
+
+
+/* background can also be set picture:
+body{
+    background: url(https://assets3.thrillist.com/v1/image/2539122/size/tmg-article_tall;jpeg_quality=20.jpg);
+    background-repeat: no-repeat;
+} */
+
+
+/* Divs(division), style will only be applied to html between it */
+/* div{
+    background: grey;
+    border: orange;
+    border-width: 3px;
+    border-style: dashed
+} */
+
+
+div{
+    background: grey;
+    border: orange 3px dashed
+}
+/* can also code in this way */
+
+
+p{
+    color: blue
+}
+
+
+/* Spans, add a style to something already in tag */
+span{
+    color: green;
+    background: orange
+}

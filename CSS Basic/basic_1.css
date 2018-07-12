@@ -1,0 +1,19 @@
+h1{
+    color: aqua;
+}
+
+
+li{
+    color: rgb(57, 110, 204)
+}
+
+
+p{
+    color: #e88c14;
+}
+
+
+h4{
+    color:rgba(139, 92, 163, 0.8)
+}
+/* rgb"a", "a" stands for transparency(alpha) */

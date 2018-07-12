@@ -1,0 +1,17 @@
+.first_div{
+    color:blue;
+}
+
+
+.second_div{
+    background: rgb(240, 237, 237)
+}
+
+
+#id_1{
+    color: green;
+    font-style: italic
+}
+
+/* When learning Boostrap which is going to have class names already define for us
+ that we can easily pass in the stylize things automatically.*/
